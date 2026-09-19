@@ -30,6 +30,8 @@ const gameOverMessage = document.getElementById('gameOverMessage');
 
 const resetButton = document.getElementById('resetButton');
 
+const againButton = document.getElementById('againButton');
+
 // start game
 
 function startGame() {
@@ -203,6 +205,7 @@ function resetGame() {
 
 submitButton.addEventListener("click", checkGuess);
 resetButton.addEventListener("click", resetGame);
+againButton.addEventListener("click", resetGame);
 
 
 guessInput.addEventListener(
